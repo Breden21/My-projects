@@ -49,7 +49,7 @@ WHERE a."PropertyAddress" isnull
 
 
 SELECT PropertyAddress
-FROM PortfolioProject.dbo.NashvilleHousing
+FROM nashville_housing_data_for_data_cleaning 
 --Where PropertyAddress is null
 --order by ParcelID
 
