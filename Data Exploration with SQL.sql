@@ -23,9 +23,9 @@ WHERE "Price Each" = (SELECT MAX("Price Each")
 --------------------------------------------------------------------------------------------------------------------------
 
 --Showing the cheapest product sold
-select distinct  "Product", "Price Each"
-from e_goods_sales_dataset 
-where "Price Each" = (SELECT MIN("Price Each") 
+SELECT DISTINCT  "Product", "Price Each"
+FROM e_goods_sales_dataset 
+WHERE "Price Each" = (SELECT MIN("Price Each") 
 						FROM e_goods_sales_dataset)
 
 --------------------------------------------------------------------------------------------------------------------------
