@@ -30,11 +30,15 @@ Fig.1.0 <- Statistics %>%
   geom_point()+
   labs(title = "Arable land available in ZImbabwe by year", caption= "Fig.1.0:Arable land available peaked in 2007")+
   theme_minimal()
+
+
 Fig.2.0 <-Statistics %>% 
   ggplot(aes(x=Year, y= Percentage_of_total_country_area_cultivated))+
   geom_bar(stat = "identity", width = 1.9,color="black", fill="black")+
   labs(title = "Percentage of total country area cultivated over time",caption= "Fig.2.0:Percentage of the total are of the country cultivated stagnated after 2007")+
   theme_minimal()
+
+
 Fig.3.0 <- Statistics %>% 
   ggplot(aes(x= Year, y= Percentage_of_cultivated_land_irrigated))+
   geom_line(color= "grey")+
@@ -42,6 +46,8 @@ Fig.3.0 <- Statistics %>%
   coord_cartesian(ylim = c(4,7))+
   labs(title = "Changes in land cultivated under irrigation over time",caption= "Fig.3.0:Percentage of land cultivated under irrigation has been decreasing for the last 28 years")+
   theme_minimal()
+
+
 Fig.4.0 <- Statistics %>% 
   ggplot(aes(x= Year, y= Percentage_contribution_of_agriculture_to_GDP))+
   geom_line(color= "grey")+
